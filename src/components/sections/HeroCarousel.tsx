@@ -221,7 +221,7 @@ export default function HeroCarousel() {
                 sizes="100vw"
                 className="object-cover object-center"
               />
-              <div className="absolute inset-0 bg-[#6B1E2C]/70" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-[#6B1E2C]/25 to-black/20" />
             </div>
           </div>
         ))}
@@ -240,17 +240,17 @@ export default function HeroCarousel() {
               className="max-w-3xl text-left flex flex-col items-start gap-4 sm:gap-6 pointer-events-auto"
             >
               {/* Badge */}
-              <span className="bg-accent-orange text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-md shadow-xs">
+              <span className="bg-accent-orange text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-md shadow-md">
                 {slides[realIndex].badge}
               </span>
 
               {/* Main Heading */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight font-sans tracking-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight font-sans tracking-tight drop-shadow-md">
                 {slides[realIndex].title}
               </h1>
 
               {/* Subtitle */}
-              <p className="text-slate-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
+              <p className="text-slate-100 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl font-medium drop-shadow-sm">
                 {slides[realIndex].subtitle}
               </p>
 

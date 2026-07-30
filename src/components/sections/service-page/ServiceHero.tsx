@@ -28,7 +28,7 @@ export function ServiceHero({ name, categoryName, title, subtitle, aiOverview, i
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/75" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-900/40 to-black/30" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
