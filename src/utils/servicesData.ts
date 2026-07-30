@@ -561,7 +561,7 @@ export const servicesData: Record<string, ServiceDetail> = {
 // Dynamically override all generic placeholders with Shyam's real photos
 const imageOverrides: Record<string, string> = {
   "balcony-safety-nets": "/images/materials/Balconynetwork.jpeg",
-  "children-safety-nets": "/images/hero/childrensafetygrill.jpg",
+  "children-safety-nets": "/images/services/child.webp",
   "pet-safety-nets": "/images/hero/pet.jpg",
   "pigeon-safety-nets": "/images/hero/pigeonnet.jpg",
   "sports-nets": "/images/hero/cricket.jpeg",
@@ -570,11 +570,11 @@ const imageOverrides: Record<string, string> = {
   "duct-area-safety-nets": "/images/hero/ductarea.webp",
   "monkey-safety-nets": "/images/hero/monkeysafetynet.webp",
   "anti-bird-spikes": "/images/hero/pigeonnet.jpg",
-  "balcony-invisible-grills": "/images/hero/hero_invisible_grill.png",
-  "children-invisible-grills": "/images/hero/childrensafetygrill.jpg",
-  "pet-invisible-grills": "/images/hero/pet.jpg",
+  "balcony-invisible-grills": "/images/services/shyambalconygrills.jpg",
+  "children-invisible-grills": "/images/services/shyamchildreninvisiblegrills.jpg",
+  "pet-invisible-grills": "/images/services/shyampetinvisiblegrills.jpg",
   "window-invisible-grills": "/images/hero/windowgrill.webp",
-  "staircase-invisible-grills": "/images/hero/childrensafetygrill.jpg",
+  "staircase-invisible-grills": "/images/services/Shayamstaircase-grills.jpg",
   "commercial-invisible-grills": "/images/hero/hero_invisible_grill.png",
   "ceiling-cloth-hangers": "/images/hero/hero_cloth_hanger.png",
   "balcony-cloth-hangers": "/images/materials/clothhangerwork.jpeg",
@@ -584,18 +584,18 @@ const categoryImages = {
   "safety-nets": [
     "/images/hero/hero_safety_net.png",
     "/images/materials/Balconynetwork.jpeg",
+    "/images/services/child.webp",
     "/images/team/team_net_install.png",
-    "/images/hero/childrensafetygrill.jpg",
     "/images/hero/pigeonnet.jpg",
     "/images/materials/Balconynetwork.jpeg"
   ],
   "invisible-grills": [
-    "/images/hero/balconygrill.webp",
-    "/images/hero/balconygrill.webp",
-    "/images/team/team_grill_install.png",
+    "/images/services/shyambalconygrills.jpg",
+    "/images/services/shyamchildreninvisiblegrills.jpg",
+    "/images/services/shyampetinvisiblegrills.jpg",
+    "/images/services/Shayamstaircase-grills.jpg",
     "/images/hero/hero_invisible_grill.png",
-    "/images/hero/windowgrill.webp",
-    "/images/hero/childrensafetygrill.jpg"
+    "/images/hero/windowgrill.webp"
   ],
   "cloth-hangers": [
     "/images/materials/clothhangerwork.jpeg",
