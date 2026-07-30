@@ -15,7 +15,7 @@ const materials: Material[] = [
   {
     id: 1,
     name: "High-Density UV Copolymer Netting",
-    image: "/images/materials/shyam-material1.jpg",
+    image: "/images/materials/Balconynetwork.jpeg",
     specs: [
       "100% UV-Stabilized HDPE Copolymer",
       "30mm to 50mm mesh opening size",
@@ -26,7 +26,7 @@ const materials: Material[] = [
   {
     id: 2,
     name: "Heavy-Duty Balcony Safety Mesh",
-    image: "/images/materials/shyam-material2.jpg",
+    image: "/images/services/child.webp",
     specs: [
       "Double-knot reinforced nylon weave",
       "High tensile strength for high-floor balconies",
@@ -37,7 +37,7 @@ const materials: Material[] = [
   {
     id: 3,
     name: "Pigeon & Anti-Bird Fine Mesh Netting",
-    image: "/images/materials/shyam-material3.jpg",
+    image: "/images/materials/FactoryNets.jpeg",
     specs: [
       "25mm to 35mm fine anti-bird mesh opening",
       "100% effective against pigeon nesting",
@@ -48,7 +48,7 @@ const materials: Material[] = [
   {
     id: 4,
     name: "Cricket & Sports Practice Netting",
-    image: "/images/materials/shyam-material4.jpg",
+    image: "/images/materials/BoxCricketnet.jpeg",
     specs: [
       "15-ply to 30-ply heavy cord thickness",
       "High-impact ball shock absorption",

@@ -66,8 +66,8 @@ export default function WhyChooseUs() {
             {/* Main Image */}
             <div className="absolute inset-0 w-[90%] h-[90%] rounded-3xl overflow-hidden shadow-xl border border-slate-200">
               <Image
-                src="/images/services/service_balcony_net.png"
-                alt="Professional balcony netting installation"
+                src="/images/services/shyambalconygrills.jpg"
+                alt="Shyam Enterprises Invisible Grill Installation"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -77,8 +77,8 @@ export default function WhyChooseUs() {
             {/* Secondary overlapping card image */}
             <div className="absolute bottom-0 right-0 w-[55%] h-[55%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white hidden sm:block">
               <Image
-                src="/images/services/service_balcony_net.png"
-                alt="Technician working at height"
+                src="/images/services/Shayamstaircase-grills.jpg"
+                alt="Shyam Staircase & Balcony Invisible Steel Grill"
                 fill
                 sizes="(max-width: 1024px) 100vw, 30vw"
                 className="object-cover"
