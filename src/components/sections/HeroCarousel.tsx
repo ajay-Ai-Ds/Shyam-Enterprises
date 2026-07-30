@@ -37,7 +37,7 @@ const slides: Slide[] = [
   },
   {
     id: 3,
-    image: "/images/materials/shyam-material1.jpg",
+    image: "/images/services/child.webp",
     badge: "Certified Materials",
     title: "100% UV-Stabilized Copolymer Netting",
     subtitle: "Certified high-tensile HDPE safety nets engineered for max durability against extreme coastal weather and sun exposure.",
@@ -55,7 +55,7 @@ const slides: Slide[] = [
   },
   {
     id: 5,
-    image: "/images/materials/shyam-material2.jpg",
+    image: "/images/services/Shayamstaircase-grills.jpg",
     badge: "Balcony Safety Solution",
     title: "High-Tensile Durable Balcony Safety Netting",
     subtitle: "Certified safety mesh engineered to protect your family and balcony space with long-lasting outdoor durability.",
