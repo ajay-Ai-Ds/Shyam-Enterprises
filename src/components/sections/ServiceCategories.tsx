@@ -51,13 +51,13 @@ export default function ServiceCategories() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col gap-3">
-          <span className="text-xs font-bold uppercase tracking-widest text-accent-orange bg-orange-50 px-3.5 py-1.5 rounded-full inline-block self-center">
+          <span className="text-xs font-bold uppercase tracking-widest text-primary-700 bg-primary-100/60 border border-primary-200/50 px-3.5 py-1.5 rounded-full inline-block self-center">
             Our Specialties
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight leading-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-primary-700 tracking-tight leading-tight">
             Engineered Safety & Utility Solutions
           </h2>
-          <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
             Protect your family, secure your pets, and optimize your balcony drying utility with our premium installation services in Bangalore.
           </p>
         </div>
@@ -97,10 +97,10 @@ export default function ServiceCategories() {
 
               {/* Card Body */}
               <div className="p-8 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-accent-orange transition-colors">
+                <h3 className="text-xl font-bold text-primary-700 mb-3 group-hover:text-[#A07020] transition-colors">
                   {category.name}
                 </h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-6 flex-grow">
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 flex-grow">
                   {category.description}
                 </p>
 

@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 31536000,
     remotePatterns: [
       {
         protocol: "https",
@@ -36,7 +38,17 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; font-src 'self' data:; frame-ancestors 'none';",
+            value:
+              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms; font-src 'self' data:; frame-ancestors 'none';",
+          },
+        ],
+      },
+      {
+        source: "/images/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },

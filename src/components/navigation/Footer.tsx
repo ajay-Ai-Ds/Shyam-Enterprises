@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="flex flex-col gap-5">
             <Logo iconOnly={false} light={true} />
-            <p className="text-slate-400 text-sm leading-relaxed mt-2">
+            <p className="text-slate-200 text-sm leading-relaxed mt-2">
               Shyam Enterprises is a premium provider of high-grade safety netting solutions and elegant invisible grills in Bangalore, Karnataka. Committed to absolute safety, premium durability, and aesthetic design.
             </p>
             <div className="flex flex-col gap-3 mt-1 text-sm">
@@ -45,9 +45,9 @@ export default function Footer() {
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className="hover:text-white transition-colors duration-200 flex items-center gap-2 group text-slate-400"
+                    className="hover:text-amber-300 transition-colors duration-200 flex items-center gap-2 group text-slate-200"
                   >
-                    <ArrowRight className="w-3.5 h-3.5 text-slate-600 group-hover:text-accent-orange transition-colors" />
+                    <ArrowRight className="w-3.5 h-3.5 text-slate-300 group-hover:text-accent-orange transition-colors" />
                     <span>{item.label}</span>
                   </Link>
                 </li>

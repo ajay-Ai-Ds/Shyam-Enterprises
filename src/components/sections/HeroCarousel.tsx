@@ -216,6 +216,8 @@ export default function HeroCarousel() {
                 alt={slide.title}
                 fill
                 priority={idx === 1}
+                loading={idx === 1 ? "eager" : "lazy"}
+                quality={75}
                 sizes="100vw"
                 className="object-cover object-center"
               />
@@ -238,7 +240,7 @@ export default function HeroCarousel() {
               className="max-w-3xl text-left flex flex-col items-start gap-4 sm:gap-6 pointer-events-auto"
             >
               {/* Badge */}
-              <span className="bg-accent-orange/90 text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-md">
+              <span className="bg-accent-orange text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-md shadow-xs">
                 {slides[realIndex].badge}
               </span>
 
@@ -259,16 +261,16 @@ export default function HeroCarousel() {
                   href="tel:+919513989222"
                   className="flex items-center gap-2.5 bg-accent-orange text-white font-bold px-6 py-3.5 rounded-full hover:bg-accent-hover transition-colors shadow-lg hover:shadow-xl text-sm"
                 >
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4 fill-white/10" />
                   <span>Call +91 95139 89222</span>
                 </a>
 
                 {/* WhatsApp Button */}
                 <a
-                  href="https://wa.me/919513989222?text=Hi%20Shyam%20Nets%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
+                  href="https://wa.me/919513989222?text=Hi%20Shyam%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 bg-emerald-600 text-white font-bold px-6 py-3.5 rounded-full hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl text-sm"
+                  className="flex items-center gap-2.5 bg-[#25D366] text-white font-bold px-6 py-3.5 rounded-full hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl text-sm"
                 >
                   <MessageSquare className="w-4 h-4 fill-white/10" />
                   <span>WhatsApp Quote</span>
@@ -304,18 +306,22 @@ export default function HeroCarousel() {
         <ChevronRight className="w-6 h-6" />
       </button>
 
-      {/* Slide Dot Indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2.5">
+      {/* Slide Dot Indicators (with 48px hit target wrapper for touch accessibility) */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-1">
         {slides.map((slide, index) => (
           <button
             key={slide.id}
             onClick={() => goToSlide(index)}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
-              index === realIndex ? "w-8 bg-accent-orange" : "w-2.5 bg-white/40 hover:bg-white/70"
-            }`}
+            className="p-3.5 flex items-center justify-center cursor-pointer focus:outline-hidden"
             aria-label={`Go to slide ${index + 1}`}
             aria-current={index === realIndex ? "true" : "false"}
-          />
+          >
+            <span
+              className={`h-2.5 rounded-full transition-all duration-300 block ${
+                index === realIndex ? "w-8 bg-accent-orange" : "w-2.5 bg-white/50 hover:bg-white/80"
+              }`}
+            />
+          </button>
         ))}
       </div>
 

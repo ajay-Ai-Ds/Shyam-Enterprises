@@ -47,13 +47,13 @@ export default function FeaturedServices() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-xl flex flex-col gap-3 text-left">
-            <span className="text-xs font-bold uppercase tracking-widest text-accent-orange bg-orange-100 px-3.5 py-1.5 rounded-full inline-block self-start">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary-700 bg-primary-100/60 border border-primary-200/50 px-3.5 py-1.5 rounded-full inline-block self-start">
               Our Installations
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-800 tracking-tight leading-tight">
-              Featured Safety & Hanger Services
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-primary-700 tracking-tight leading-tight">
+              Featured Safety &amp; Hanger Services
             </h2>
-            <p className="text-slate-500 text-sm leading-relaxed">
+            <p className="text-slate-600 text-sm leading-relaxed">
               Explore our full suite of professional services. Handcrafted using premium materials and installed by our certified technicians.
             </p>
           </div>
@@ -114,10 +114,10 @@ export default function FeaturedServices() {
 
                 {/* Body */}
                 <div className="p-6 flex flex-col flex-grow text-left">
-                  <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-accent-orange transition-colors">
+                  <h3 className="text-lg font-bold text-primary-700 mb-2 group-hover:text-[#A07020] transition-colors">
                     {service.name}
                   </h3>
-                  <p className="text-slate-500 text-xs leading-relaxed mb-5 flex-grow">
+                  <p className="text-slate-600 text-xs leading-relaxed mb-5 flex-grow">
                     {service.description}
                   </p>
 
