@@ -13,8 +13,8 @@ export default function Logo({ className = "", iconOnly = false, light = false }
       {iconOnly ? (
         <div className="relative flex-shrink-0 w-10 h-10 transition-transform duration-300 group-hover:scale-105">
           <Image
-            src="/images/logo/shyam-icon.svg"
-            alt="Shyam Enterprises Shield Logo"
+            src="/images/logo/shyam-se-icon.svg"
+            alt="Shyam Enterprises SE Shield Logo"
             fill
             sizes="40px"
             className="object-contain"
@@ -22,12 +22,12 @@ export default function Logo({ className = "", iconOnly = false, light = false }
           />
         </div>
       ) : (
-        <div className="relative h-12 w-64 transition-transform duration-300 group-hover:scale-[1.02]">
+        <div className="relative h-12 w-64 sm:w-72 transition-transform duration-300 group-hover:scale-[1.02]">
           <Image
-            src={light ? "/images/logo/shyam-logo-light.svg" : "/images/logo/shyam-logo.svg"}
-            alt="Shyam Enterprises Logo"
+            src={light ? "/images/logo/shyam-se-logo-light.svg" : "/images/logo/shyam-se-logo.svg"}
+            alt="Shyam Enterprises SE Shield Logo"
             fill
-            sizes="256px"
+            sizes="288px"
             className="object-contain object-left"
             priority
           />
