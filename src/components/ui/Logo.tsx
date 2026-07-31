@@ -11,23 +11,23 @@ export default function Logo({ className = "", iconOnly = false, light = false }
   return (
     <Link href="/" className={`flex items-center select-none group ${className}`} aria-label="Shyam Enterprises Home">
       {iconOnly ? (
-        <div className="relative flex-shrink-0 w-10 h-10 transition-transform duration-300 group-hover:scale-105">
+        <div className="relative flex-shrink-0 w-12 h-12 transition-transform duration-300 group-hover:scale-105">
           <Image
             src="/images/logo/shyam-se-icon.svg"
             alt="Shyam Enterprises SE Shield Logo"
             fill
-            sizes="40px"
+            sizes="48px"
             className="object-contain"
             priority
           />
         </div>
       ) : (
-        <div className="relative h-12 w-64 sm:w-72 transition-transform duration-300 group-hover:scale-[1.02]">
+        <div className="relative h-14 sm:h-16 w-72 sm:w-84 md:w-[350px] transition-transform duration-300 group-hover:scale-[1.02]">
           <Image
             src={light ? "/images/logo/shyam-se-logo-light.svg" : "/images/logo/shyam-se-logo.svg"}
             alt="Shyam Enterprises SE Shield Logo"
             fill
-            sizes="288px"
+            sizes="350px"
             className="object-contain object-left"
             priority
           />
