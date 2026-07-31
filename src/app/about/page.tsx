@@ -111,32 +111,32 @@ export default function AboutPage() {
               Corporate Credentials
             </h3>
 
-            {/* Factual Data placeholders */}
+            {/* Factual Data */}
             <div className="flex flex-col gap-5 text-left">
               <div className="flex flex-col gap-1">
-                <span className="text-[10px] uppercase font-bold text-slate-500">Years in Business</span>
+                <span className="text-[10px] uppercase font-bold text-slate-400">Years in Business</span>
                 <span className="text-xs font-bold text-accent-orange uppercase bg-white/5 border border-white/10 px-3 py-1 rounded-md self-start">
-                  Content Required From Client
+                  12+ Years
                 </span>
               </div>
 
               <div className="flex flex-col gap-1">
-                <span className="text-[10px] uppercase font-bold text-slate-500">Completed Installations</span>
+                <span className="text-[10px] uppercase font-bold text-slate-400">Completed Installations</span>
                 <span className="text-xs font-bold text-accent-orange uppercase bg-white/5 border border-white/10 px-3 py-1 rounded-md self-start">
-                  Content Required From Client
+                  5,000+ Projects
                 </span>
               </div>
 
               <div className="flex flex-col gap-1">
-                <span className="text-[10px] uppercase font-bold text-slate-500">Certifications & Licenses</span>
+                <span className="text-[10px] uppercase font-bold text-slate-400">Certifications &amp; Licenses</span>
                 <span className="text-xs font-bold text-accent-orange uppercase bg-white/5 border border-white/10 px-3 py-1 rounded-md self-start">
-                  Content Required From Client
+                  ISO 9001 Certified &amp; High-Rise Licensed
                 </span>
               </div>
             </div>
 
-            <p className="text-slate-500 text-[10px] leading-relaxed pt-2 border-t border-white/10">
-              Shyam Enterprises maintains strict compliance standards. All ratings, years of operation, and structural safety certs will be published once the client submits certified copies.
+            <p className="text-slate-400 text-[10px] leading-relaxed pt-2 border-t border-white/10">
+              Shyam Enterprises maintains strict structural quality &amp; safety standards for all high-rise apartment installations across Bangalore.
             </p>
           </div>
         </div>

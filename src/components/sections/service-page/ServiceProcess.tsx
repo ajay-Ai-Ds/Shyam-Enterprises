@@ -183,8 +183,8 @@ export function ServiceRelated({ related, categoryName }: RelatedProps) {
                     key={idx}
                     className="p-4 bg-[#F7F5F0] border border-dashed border-slate-200 rounded-xl flex flex-col gap-2"
                   >
-                    <span className="text-[9px] uppercase font-extrabold text-accent-orange tracking-wider bg-orange-50 border border-orange-100 px-2 py-0.5 rounded-sm inline-block self-start leading-none">
-                      Blog Content Required From Client
+                    <span className="text-[9px] uppercase font-extrabold text-primary-700 tracking-wider bg-primary-100/60 border border-primary-200/50 px-2 py-0.5 rounded-sm inline-block self-start leading-none">
+                      Expert Safety Guide
                     </span>
                     <span className="text-xs font-bold text-slate-700 leading-snug">
                       {blog.title}

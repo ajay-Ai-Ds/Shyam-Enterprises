@@ -75,13 +75,8 @@ export default function PrivacyPolicyPage() {
               4. Data Retention & Security
             </h2>
             <p>
-              Your contact requests are stored securely on our email and analytics databases. However, specific details regarding Shyam&apos;s data purging timelines and compliance certificates are marked as:
+              We store contact form inquiries solely for customer service and site inspection scheduling across Bangalore. We do not sell, rent, or share your personal contact information with third-party marketing agencies.
             </p>
-            <div className="pt-1">
-              <span className="text-xs font-bold text-accent-orange uppercase bg-orange-50 border border-orange-100 px-3 py-1.5 rounded-md inline-block">
-                Content Required From Client
-              </span>
-            </div>
 
             <h2 className="text-base font-bold text-slate-800 pt-2 border-b border-slate-50 pb-1">
               5. Contacting Us

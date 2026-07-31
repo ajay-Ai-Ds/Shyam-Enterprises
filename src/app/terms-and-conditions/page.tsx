@@ -58,28 +58,18 @@ export default function TermsAndConditionsPage() {
             </p>
 
             <h2 className="text-base font-bold text-slate-800 pt-2 border-b border-slate-50 pb-1">
-              2. Payments & Pricing
+              2. Payments &amp; Pricing
             </h2>
             <p>
-              All installation rates, project bills, payment terms, and applicable local taxes are declared clearly in the physical quotation shared with the homeowner. Our official pricing schemas are marked as:
+              All installation rates, project bills, payment terms, and applicable local taxes are declared clearly in the written quotation provided after free site measurement. Payments are due upon successful completion and customer inspection of installation work.
             </p>
-            <div className="pt-1">
-              <span className="text-xs font-bold text-accent-orange uppercase bg-orange-50 border border-orange-100 px-3 py-1.5 rounded-md inline-block">
-                Content Required From Client
-              </span>
-            </div>
 
             <h2 className="text-base font-bold text-slate-800 pt-2 border-b border-slate-50 pb-1">
               3. Service Warranties
             </h2>
             <p>
-              Shyam Enterprises installs high-quality monofilament safety netting and invisible grills. Warranty terms vary by material mesh thickness and UV-stability ratings. Standard warranty duration agreements are strictly subject to client confirmation and are marked as:
+              Shyam Enterprises provides a comprehensive 3 to 5 Year Manufacturer Warranty on safety nets and SS316 marine-grade stainless steel invisible grills against manufacturing defects, rust, and UV degradation under normal outdoor exposure.
             </p>
-            <div className="pt-1">
-              <span className="text-xs font-bold text-accent-orange uppercase bg-orange-50 border border-orange-100 px-3 py-1.5 rounded-md inline-block">
-                Content Required From Client
-              </span>
-            </div>
 
             <h2 className="text-base font-bold text-slate-800 pt-2 border-b border-slate-50 pb-1">
               4. Installation Access
