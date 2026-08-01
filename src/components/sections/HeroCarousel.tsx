@@ -19,7 +19,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: "/images/materials/Balconynetwork.jpeg",
+    image: "/images/hero/balconysafetynet.jpg",
     badge: "Pigeon Exclusion",
     title: "100% Pigeon & Bird Proofing Balcony Nets",
     subtitle: "Keep pigeons and birds away from nesting on your balcony. Elegant, durable, and transparent netting solutions.",
