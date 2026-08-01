@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import HeroCarousel from "@/components/sections/HeroCarousel";
+import MarqueeTicker from "@/components/sections/MarqueeTicker";
 import Stats from "@/components/sections/Stats";
 import ServiceCategories from "@/components/sections/ServiceCategories";
 
@@ -37,6 +38,7 @@ export default function Home() {
 
       {/* Homepage Sections in Brand-defined Order */}
       <HeroCarousel />
+      <MarqueeTicker />
       <Stats />
       <ServiceCategories />
       <FeaturedServices />
