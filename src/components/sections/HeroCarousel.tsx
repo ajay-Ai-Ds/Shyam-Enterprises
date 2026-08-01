@@ -178,7 +178,7 @@ export default function HeroCarousel() {
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
-      className="relative w-full h-[85vh] min-h-[600px] max-h-[900px] overflow-hidden bg-slate-900 focus:outline-hidden"
+      className="relative w-full h-[62vh] sm:h-[80vh] md:h-[85vh] min-h-[460px] sm:min-h-[580px] md:min-h-[600px] max-h-[900px] overflow-hidden bg-slate-900 focus:outline-hidden"
       aria-label="Shyam Enterprises Hero Slider"
       tabIndex={0}
     >
@@ -228,7 +228,7 @@ export default function HeroCarousel() {
       </div>
 
       {/* Text Content Overlay — always shows real slide content */}
-      <div className="absolute inset-0 flex items-center pointer-events-none">
+      <div className="absolute inset-0 flex items-center pointer-events-none pt-4 sm:pt-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
@@ -237,31 +237,31 @@ export default function HeroCarousel() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.55, ease: "easeOut" }}
-              className="max-w-3xl text-left flex flex-col items-start gap-4 sm:gap-6 pointer-events-auto"
+              className="max-w-3xl text-left flex flex-col items-start gap-2.5 sm:gap-6 pointer-events-auto"
             >
               {/* Badge */}
-              <span className="bg-accent-orange text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-md shadow-md">
+              <span className="bg-accent-orange text-white text-[10px] sm:text-sm font-bold uppercase tracking-wider px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-md shadow-md">
                 {slides[realIndex].badge}
               </span>
 
               {/* Main Heading */}
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight font-sans tracking-tight drop-shadow-md">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight font-sans tracking-tight drop-shadow-md">
                 {slides[realIndex].title}
               </h1>
 
               {/* Subtitle */}
-              <p className="text-slate-100 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl font-medium drop-shadow-sm">
+              <p className="text-slate-100 text-xs sm:text-base md:text-lg leading-relaxed max-w-2xl font-medium drop-shadow-sm line-clamp-3 sm:line-clamp-none">
                 {slides[realIndex].subtitle}
               </p>
 
               {/* Action Buttons */}
-              <div className="flex flex-wrap gap-4 mt-2">
+              <div className="flex flex-wrap gap-2.5 sm:gap-4 mt-1 sm:mt-2">
                 {/* Call Button */}
                 <a
                   href="tel:+919513989222"
-                  className="flex items-center gap-2.5 bg-accent-orange text-white font-bold px-6 py-3.5 rounded-full hover:bg-accent-hover transition-colors shadow-lg hover:shadow-xl text-sm"
+                  className="flex items-center gap-2 bg-accent-orange text-white font-bold px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-full hover:bg-accent-hover transition-colors shadow-lg hover:shadow-xl text-xs sm:text-sm"
                 >
-                  <Phone className="w-4 h-4 fill-white/10" />
+                  <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-white/10" />
                   <span>Call +91 95139 89222</span>
                 </a>
 
@@ -270,19 +270,19 @@ export default function HeroCarousel() {
                   href="https://wa.me/919513989222?text=Hi%20Shyam%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2.5 bg-[#25D366] text-white font-bold px-6 py-3.5 rounded-full hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl text-sm"
+                  className="flex items-center gap-2 bg-[#25D366] text-white font-bold px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-full hover:bg-emerald-700 transition-colors shadow-lg hover:shadow-xl text-xs sm:text-sm"
                 >
-                  <MessageSquare className="w-4 h-4 fill-white/10" />
+                  <MessageSquare className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-white/10" />
                   <span>WhatsApp Quote</span>
                 </a>
 
                 {/* Request Quote Button */}
                 <Link
                   href="#contact"
-                  className="flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold px-6 py-3.5 rounded-full transition-all border border-white/30 backdrop-blur-xs text-sm"
+                  className="hidden xs:flex items-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-full transition-all border border-white/30 backdrop-blur-xs text-xs sm:text-sm"
                 >
                   <span>Request Quote</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </Link>
               </div>
             </motion.div>
