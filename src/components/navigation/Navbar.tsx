@@ -111,17 +111,17 @@ export default function Navbar() {
   return (
     <>
       {/* PART 1: TOP BAR (Thin Strip in Deep Burgundy #6B1E2C) */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-[#6B1E2C] text-white text-xs font-medium py-2 px-4 shadow-sm border-b border-[#4A1520]">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-[#6B1E2C] text-white text-xs font-medium py-1.5 px-3 sm:px-4 shadow-sm border-b border-[#4A1520]">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-4">
           {/* Left: Phone numbers */}
-          <div className="flex items-center gap-4 shrink-0">
+          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
             <a
               href="tel:+919513989222"
               className="flex items-center gap-1.5 hover:text-[#D4A24C] transition-colors"
               aria-label="Call Primary Phone"
             >
               <Phone className="w-3.5 h-3.5 text-[#D4A24C]" />
-              <span className="font-bold">+91 95139 89222</span>
+              <span className="font-bold text-xs sm:text-sm">+91 95139 89222</span>
             </a>
             <span className="hidden md:inline text-slate-400">|</span>
             <a
@@ -136,11 +136,22 @@ export default function Navbar() {
           {/* Center: Banner statement */}
           <div className="hidden lg:flex items-center gap-2 text-[11px] font-semibold text-amber-100/90 tracking-wide uppercase">
             <Sparkles className="w-3.5 h-3.5 text-[#D4A24C]" />
-            <span>Bulk &amp; Residential Projects Welcome | Serving All Bangalore</span>
+            <span>Free Doorstep Inspection | Serving All Bangalore</span>
           </div>
 
-          {/* Right: Email */}
-          <div className="flex items-center gap-4 shrink-0">
+          {/* Right: Email & Mobile WhatsApp Badge */}
+          <div className="flex items-center gap-2 sm:gap-4 shrink-0">
+            {/* Mobile WhatsApp Quick Action */}
+            <a
+              href="https://wa.me/919513989222?text=Hi%20Shyam%20Enterprises%2C%20I%20would%20like%20to%20request%20a%20free%20quote%20for%20safety%20nets%2Finvisible%20grills."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex sm:hidden items-center gap-1 bg-[#25D366]/25 hover:bg-[#25D366]/40 text-emerald-300 px-2.5 py-0.5 rounded border border-[#25D366]/40 text-[11px] font-bold transition-all"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse"></span>
+              <span>WhatsApp Quote</span>
+            </a>
+
             <a
               href="mailto:info.shyaminvisiblegrills@gmail.com"
               className="hidden sm:flex items-center gap-1.5 hover:text-[#D4A24C] transition-colors text-slate-200"
