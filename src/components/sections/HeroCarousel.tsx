@@ -178,7 +178,7 @@ export default function HeroCarousel() {
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
-      className="relative w-full h-[62vh] sm:h-[80vh] md:h-[85vh] min-h-[460px] sm:min-h-[580px] md:min-h-[600px] max-h-[900px] overflow-hidden bg-[#1a0c10] focus:outline-hidden"
+      className="relative w-full h-[70vh] sm:h-[80vh] md:h-[85vh] min-h-[510px] sm:min-h-[580px] md:min-h-[600px] max-h-[900px] overflow-hidden bg-[#1a0c10] focus:outline-hidden"
       aria-label="Shyam Enterprises Hero Slider"
       tabIndex={0}
     >
