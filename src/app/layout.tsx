@@ -174,6 +174,7 @@ export default function RootLayout({
     >
       <head>
         <meta name="google-site-verification" content="sxBWfisev7KdCvC-tTgSvXcK8pizCa5U-tnWHB-SUhE" />
+        <link rel="preload" as="image" href="/images/materials/Balconynetwork.jpeg" />
         {/* Schema markup script injections */}
         <script
           type="application/ld+json"

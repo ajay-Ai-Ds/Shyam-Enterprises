@@ -178,7 +178,7 @@ export default function HeroCarousel() {
       onTouchStart={onTouchStart}
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
-      className="relative w-full h-[62vh] sm:h-[80vh] md:h-[85vh] min-h-[460px] sm:min-h-[580px] md:min-h-[600px] max-h-[900px] overflow-hidden bg-slate-900 focus:outline-hidden"
+      className="relative w-full h-[62vh] sm:h-[80vh] md:h-[85vh] min-h-[460px] sm:min-h-[580px] md:min-h-[600px] max-h-[900px] overflow-hidden bg-[#1a0c10] focus:outline-hidden"
       aria-label="Shyam Enterprises Hero Slider"
       tabIndex={0}
     >
@@ -198,7 +198,7 @@ export default function HeroCarousel() {
         {extendedSlides.map((slide, idx) => (
           <div
             key={`${slide.id}-${idx}`}
-            className="relative h-full flex-shrink-0"
+            className="relative h-full flex-shrink-0 bg-[#2b1419]"
             style={{ width: `${100 / extendedSlides.length}%` }}
           >
             {/* Ken Burns effect */}
@@ -215,13 +215,13 @@ export default function HeroCarousel() {
                 src={slide.image}
                 alt={slide.title}
                 fill
-                priority={idx === 1}
-                loading={idx === 1 ? "eager" : "lazy"}
-                quality={75}
+                priority={idx === 1 || idx === 0 || idx === 2}
+                loading={idx === 1 || idx === 0 || idx === 2 ? "eager" : "lazy"}
+                quality={85}
                 sizes="100vw"
-                className="object-cover object-center"
+                className="object-cover object-center transition-opacity duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-[#6B1E2C]/25 to-black/20" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-[#6B1E2C]/25 to-black/20 pointer-events-none" />
             </div>
           </div>
         ))}
